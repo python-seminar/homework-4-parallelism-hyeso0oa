@@ -1,0 +1,12 @@
+README file.
+
+Homework 4: Implementing the Monte Carlo dart-throwing simulation to
+calculate a numerical approximation to Pi. We tried to implement the simulation
+using Ipython parallel module and Multiprocess and compared the execution time of each method
+with the execution time without any parallel computing. 
+
+Interpretation:
+When the number of darts is small, a system without parallel computing was fast because assigning part of work to several worker processes or ipcluster controllers and delivering the data between those worker processes or controllers
+and ipython kernel takes time. This additional time for parallel computing was significant compared to the time to run the simulation.
+
+However, when the number of darts is big, a system without parallel computing was slower because massive workloads were divided into many worker processes or ipcluster controllers, and this allocation reduces the execution time a lot. The time to transfer data between ipython kernel and those worker process or ipcluster controllers is no longer significant compared to the time to run the simulations.
