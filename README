@@ -10,3 +10,7 @@ When the number of darts is small, a system without parallel computing was fast 
 and ipython kernel takes time. This additional time for parallel computing was significant compared to the time to run the simulation.
 
 However, when the number of darts is big, a system without parallel computing was slower because massive workloads were divided into many worker processes or ipcluster controllers, and this allocation reduces the execution time a lot. The time to transfer data between ipython kernel and those worker process or ipcluster controllers is no longer significant compared to the time to run the simulations.
+
+All plot was generated on MacBook Pro with 2.6 GHz Intel Core i5 with dual core.
+
+
